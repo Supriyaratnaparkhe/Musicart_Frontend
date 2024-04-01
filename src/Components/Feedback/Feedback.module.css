@@ -84,6 +84,7 @@
   line-height: 29.3px;
   color: #ffff;
   margin-top: 10px;
+  border:none;
 }
 .close {
   position: fixed;
