@@ -48,7 +48,6 @@ const HomePage = () => {
   const [list, setlist] = useState(listhide);
   const [cartItemCount, setCartItemCount] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
-  const [searchQueryHandled, setSearchQueryHandled] = useState(false);
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -106,9 +105,7 @@ const HomePage = () => {
         setLoading(false);
       } 
     };
-    if(!searchq){
       fetchData();
-    }
     
   }, [filters]);
 
@@ -129,8 +126,7 @@ const HomePage = () => {
         setLoading(false);
       }
     };
-      fetchsearchData();
-      searchq="";   
+      fetchsearchData();  
   }, []);
 
   const handleGridView = () => {
