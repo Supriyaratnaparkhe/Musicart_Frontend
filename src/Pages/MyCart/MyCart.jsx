@@ -39,7 +39,7 @@ const MyCart = () => {
     const fetchCartProducts = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/product/myCart/${userId}`,
+          `https://musicart-backend-zxey.onrender.com/product/myCart/${userId}`,
 
           {
             headers: {
