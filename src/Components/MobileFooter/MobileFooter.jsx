@@ -60,7 +60,7 @@ const MobileFooter = ({ isLoggedIn, setIsLoggedIn, state, cartItemCount }) => {
       if (isLoggedIn) {
         try {
           const response = await axios.get(
-            `http://localhost:3001/auth/${userId}/cartItem`,
+            `https://musicart-backend-zxey.onrender.com/auth/${userId}/cartItem`,
             {
               headers: {
                 token: localStorage.getItem("token"),
