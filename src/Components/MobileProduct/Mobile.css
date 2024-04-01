@@ -25,15 +25,10 @@
   transform: translateY(-50%);
   top: 105%;
 }
-
-.slick-dots {
-  bottom: 10px;
+.slick-prev{
+  left:25%;
+}
+.slick-next{
+  right:25%;
 }
 
-.slick-dots li {
-  margin: 0 5px;
-}
-
-.slick-dots li.slick-active button {
-  background-color: #007bff;
-}
