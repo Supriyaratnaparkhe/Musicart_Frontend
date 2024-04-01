@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import search from "../../assets/search.png";
 import backArrow from "../../assets/backArrow.png";
 import MobileFooter from "../../Components/MobileFooter/MobileFooter";
@@ -14,6 +15,18 @@ const MobileCart = ({
   cartProducts,
   handleBack,
 }) => {
+  const { userId } = useParams();
+  const [searchValue, setSearchValue] = useState("");
+  const navigate = useNavigate();
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      if (isLoggedIn) {
+        navigate(`/${userId}`, { state: { searchq: searchValue } });
+      } else {
+        navigate("/", { state: { searchq: searchValue } });
+      }
+    }
+  };
   return (
     <>
       <div className={styles.headbar1}>
@@ -21,8 +34,9 @@ const MobileCart = ({
           <input
             type="text"
             name="search"
-            // value={filters.search}
-            // onChange={handleFilterChange}
+            value={searchValue}
+            onChange={(e) => setSearchValue(e.target.value)}
+            onKeyPress={handleKeyPress}
             className={styles.searchbar1}
             placeholder="Search by Product Name"
           />
