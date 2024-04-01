@@ -67,7 +67,7 @@ const Register = () => {
 
       if (isValid) {
         const response = await axios.post(
-          "http://localhost:3001/auth/register",
+          "https://musicart-backend-zxey.onrender.com/auth/register",
           {
             name: UserState.name,
             mobile: UserState.mobile,
