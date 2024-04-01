@@ -11,7 +11,7 @@ const Listview = ({ products, setCartItemCount, isLoggedIn }) => {
   const handleAddToCart = async (productId) => {
     try {
       await axios.put(
-        `http://localhost:3001/auth/${userId}/${productId}`,
+        `https://musicart-backend-zxey.onrender.com/auth/${userId}/${productId}`,
         {},
         {
           headers: {
