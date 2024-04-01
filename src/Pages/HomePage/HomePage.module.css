@@ -13,8 +13,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1; /* Adjust z-index as needed */
-  /* Add other styling properties as needed */
+  z-index: 1; 
   background-color: #fff;
 }
 .left {
@@ -49,7 +48,7 @@
 }
 .advertise {
   position: relative;
-  margin-top: 16vh;
+  margin-top: 18vh;
   background-image: url("../../assets/background.png");
   background-repeat: no-repeat;
   width: 85vw;
@@ -81,7 +80,6 @@
   height: 6vh;
   border-radius: 48px 48px 48px 48px;
   border: 3px solid #c8c8c8;
-  
   padding-left: 50px;
   font-family: Roboto;
   font-size: 20px;
@@ -226,7 +224,6 @@ select:focus {
     height: 15vh;
     background-size:  100% 100%;
     border-radius: 7px;
-    /* margin-left: 70px; */
   }
   .text1 {
     font-family: Roboto;
@@ -248,7 +245,6 @@ select:focus {
     right: 0%;
   }
   .selectedoption1 {
-    /* width: 150px; */
     height: 30px;
     background: #d9d9d9;
     font-family: Roboto;
@@ -280,9 +276,7 @@ select:focus {
     font-size: 18px;
     font-weight: 400;
     line-height: 26.32px;
-    border-radius: 6px;
-    /* padding-left: 5px; */
-    
+    border-radius: 6px;    
   }
   .footer {
     position: fixed;
