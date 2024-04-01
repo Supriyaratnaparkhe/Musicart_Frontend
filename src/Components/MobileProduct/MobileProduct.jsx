@@ -51,8 +51,6 @@ const MobileProduct = ({
             <input
               type="text"
               name="search"
-              // value={filters.search}
-              // onChange={handleFilterChange}
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
               onKeyPress={handleKeyPress}
