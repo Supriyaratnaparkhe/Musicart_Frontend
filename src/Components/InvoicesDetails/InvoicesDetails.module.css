@@ -1,0 +1,329 @@
+.container {
+  width: 100vw;
+  height: 93vh;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7vh;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 70px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 70px;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+.name {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 51.71px;
+  color: #2e0052;
+}
+.home {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.95px;
+  cursor: pointer;
+}
+.back button {
+  width: 160px;
+  height: 35px;
+  border-radius: 14px;
+  background: #2e0052;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 32.96px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-top: 1vh;
+  border: none;
+}
+.checkout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.headline {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.bodyC {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.leftContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2vh 0 10vh 3vw;
+}
+.fieldContainer {
+  width: 40%;
+}
+.paymentMode {
+  width: 97%;
+  padding-left: 3%;
+  border: 1px solid #919191;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 42.92px;
+  color: #797979;
+  border-radius: 5px;
+}
+.deliveryDiv {
+  display: flex;
+  align-items: center;
+}
+.ordername {
+  width: 100%;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 42.92px;
+  color: #797979;
+}
+.address {
+  border: 1px solid #919191;
+  width: 97%;
+  border-radius: 5px;
+  padding-left: 3%;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 42.92px;
+  color: #797979;
+}
+.paymentDiv {
+  display: flex;
+  align-items: center;
+}
+.reviewDiv {
+  display: flex;
+}
+.gridComponent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+}
+.listnumber {
+  width: 40%;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 41.55px;
+  color: #b52b00;
+}
+.productContainer img {
+  border-radius: 6.12px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.showname {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 10px;
+}
+.showcolor {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #797979;
+  margin-top: 3px;
+}
+.estimate {
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 5px;
+}
+.placeOrder {
+  width: 100%;
+  height: 10vh;
+  border: 4px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.line img {
+  width: 100%;
+}
+.rightContainer {
+  width: 40%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placeOrderBox {
+  width: 70%;
+  height: 50%;
+  border-radius: 16px;
+  border: 4px solid #e1e1e1;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.summary {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36.99px;
+}
+.divBox {
+  display: flex;
+  justify-content: space-between;
+}
+.pricevalue {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33.1px;
+  color: #797979;
+}
+.orderTotal {
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 36.99px;
+  color: #b52b00;
+}
+.smallline img {
+  width: 100%;
+}
+.selectedImage img {
+  border: 1.5px solid #b52b00;
+}
+@media screen and (max-width: 500px) {
+  .mobileNavbar {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color: #2e0052;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+  }
+  .mobileNavbar img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .headline1 {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0em;
+    color: #fff;
+  }
+  .header1 {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+  .backbut {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #fff;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 32.96px;
+    text-align: center;
+    box-shadow: 0px 1px 4px 0px #00000054;
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 8vh;
+  }
+  .bodyC1 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 13vh;
+  }
+  .fieldContainer1 {
+    width: 100%;
+  }
+  .paymentMode1 {
+    width: 80%;
+    margin-left: 5%;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 42.92px;
+    color: #797979;
+  }
+  .ordername1 {
+    width: 75%;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #797979;
+    margin-left: 5%;
+  }
+  .address1 {
+    width: 60%;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #797979;
+    margin-left: 5%;
+  }
+  .gridComponent1 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    margin-left: 5%;
+  }
+  .listnumber {
+    width: 100%;
+  }
+
+  .placeOrderBox {
+    width: 90%;
+    height: 50%;
+    border-radius: 16px;
+    border: 4px solid #e1e1e1;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

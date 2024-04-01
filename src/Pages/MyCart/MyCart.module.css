@@ -1,0 +1,431 @@
+.container {
+  width: 100vw;
+  height: 93vh;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7vh;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 70px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 70px;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+.name {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 51.71px;
+  color: #2e0052;
+}
+.home {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.95px;
+  cursor: pointer;
+}
+.back button {
+  width: 160px;
+  height: 35px;
+  border-radius: 14px;
+  background: #2e0052;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 32.96px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-top: 1vh;
+  border: none;
+}
+.cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.headline {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.bag img {
+  width: 28px;
+  height: 28px;
+}
+.bodyC {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.leftContainer {
+  width: 73%;
+  max-height: 70vh;
+}
+.cartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+.borderdiv {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  padding-top: 10px;
+  overflow-y: auto;
+  border: 2.87px solid #e1e1e1;
+}
+.rightContainer {
+  width: 28%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prDetails {
+  width: 100%;
+  font-family: Roboto;
+  font-size: 25.17px;
+  font-weight: 500;
+  line-height: 31.09px;
+}
+.priceContainer {
+  margin-top: 5vh;
+}
+.tag {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 31.09px;
+  width: 70%;
+}
+.value1 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 39.46px;
+}
+.tag1 {
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 31.09px;
+  width: 70%;
+}
+.value {
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 39.46px;
+}
+.priceDetails {
+  width: 100%;
+}
+.prRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.placeOrder {
+  margin-top: 6vh;
+  height: 6vh;
+}
+.placeOrder button {
+  width: 90%;
+  height: 100%;
+  border-radius: 11px;
+  background: #ffd600;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 31.64px;
+  letter-spacing: 0.02em;
+  border: none;
+  cursor: pointer;
+}
+.totalAmount {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 8vh;
+}
+.cartproduct {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.prImage {
+  width: 18%;
+}
+.prImage img {
+  width: 80%;
+  height: 80%;
+}
+.namediv {
+  width: 25%;
+}
+.pname {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 36.97px;
+}
+.color {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #a2a2a2;
+}
+.pricediv {
+  width: 10%;
+}
+.quantitydiv {
+  width: 12%;
+}
+.amount select {
+  width: 80%;
+}
+.price {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36.97px;
+}
+.amount {
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 36.97px;
+}
+.totaldiv {
+  width: 10%;
+}
+.footer {
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  height: 5vh;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.selectedImage img {
+  border: 1.5px solid #b52b00;
+}
+@media screen and (max-width: 500px) {
+  .container1 {
+    width: 100vw;
+    padding-bottom: 10vh;
+  }
+  .headbar1 {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 10vh;
+    background: #2e0052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .search1 input {
+    width: 90%;
+    height: 100%;
+    border-radius: 3px;
+    padding-left: 10%;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 39.31px;
+  }
+  .search1 {
+    width: 90%;
+    height: 65%;
+    position: relative;
+  }
+  .searchbar1::placeholder {
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 39.31px;
+  }
+  .search1 img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 2%;
+    top: 20%;
+  }
+
+  input:focus {
+    outline: none;
+  }
+  select:focus {
+    outline: none;
+  }
+  .backbut {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #fff;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 32.96px;
+    text-align: center;
+    box-shadow: 0px 1px 4px 0px #00000054;
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 11vh;
+  }
+  .cartContainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+  }
+  .borderdiv1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    padding: 10px 0;
+    overflow-y: auto;
+    border: 2.87px solid #e1e1e1;
+    height: 90%;
+  }
+
+  .cartproduct1 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background: #dbdbdb;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .prImage1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prImage1 img {
+    width: 80%;
+    height: 80%;
+  }
+  .pname1 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 19.63px;
+  }
+  .color {
+    font-family: Roboto;
+    font-size: 12.29px;
+    font-weight: 400;
+    line-height: 15.61px;
+    color: #000;
+  }
+  .amount {
+    font-family: Roboto;
+    font-size: 20.19px;
+    font-weight: 500;
+    line-height: 24.94px;
+  }
+  .quantitydiv1 {
+    display: flex;
+  }
+  .amount1 select {
+    width: 50px;
+  }
+  .totaldiv1 {
+    display: flex;
+  }
+  .bottomContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prDetails1 {
+    display: flex;
+  }
+  .tag {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 70%;
+  }
+  .tag1 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 70%;
+  }
+  .value1 {
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .placeOrder1 {
+    margin-top: 10px;
+  }
+  .placeOrder1 button {
+    width: 100%;
+    height: 5vh;
+    border-radius: 8px;
+    background: #ffd600;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31.64px;
+    letter-spacing: 0.02em;
+    border: none;
+    cursor: pointer;
+  }
+}

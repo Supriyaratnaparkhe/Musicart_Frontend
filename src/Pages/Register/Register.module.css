@@ -1,0 +1,218 @@
+.container {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body {
+  width: 70vw;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  width: 42%;
+  height: 85%;
+  border-radius: 23.2px;
+  border: 3px solid #d9d9d9;
+  padding: 5px 0px 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.main img {
+  width: 40px;
+  height: 40px;
+}
+.headline {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0em;
+  color: #2e0052;
+}
+.create {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  margin-top: -5px;
+}
+.input {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+.inputbox {
+  width: 90%;
+  height: 5vh;
+  border-radius: 8px;
+  border: 2px solid #b6b6b6;
+  padding-left: 10px;
+}
+.inputErrorbox {
+  width: 90%;
+  height: 5vh;
+  border-radius: 8px;
+  border: 2px solid #ff0000;
+  padding-left: 10px;
+}
+.inputErrorbox::placeholder {
+  color: #ff0000;
+}
+.signupbtn button {
+  width: 93%;
+  height: 35px;
+  border-radius: 8px;
+  background: #2e0052;
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #ffff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.note {
+  font-family: Roboto;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  width: 90%;
+}
+.line {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+.line span {
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.para {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  width: 90%;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .body1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobileNavbar {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color: #2e0052;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+  }
+  .box {
+    width: 80%;
+    height: 80%;
+    border-radius: 23.2px;
+    border: 3px solid #d9d9d9;
+    padding: 5px 0px 10px 20px;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome {
+    position: absolute;
+    top: 8vh;
+    left: 6vw;
+    font-family: Roboto;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 36.33px;
+    color: #2e0052;
+  }
+  .mobilecreate {
+    font-family: Roboto;
+    font-size: 15.7px;
+    font-weight: 500;
+    line-height: 18.4px;
+  }
+  .mobilecreate span {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .input {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+  }
+  .mobileNavbar img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .headline1 {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0em;
+    color: #fff;
+  }
+  .note {
+    font-size: 12px;
+  }
+  .registerbtn button {
+    width: 93%;
+    height: 37px;
+  }
+  .line {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+}

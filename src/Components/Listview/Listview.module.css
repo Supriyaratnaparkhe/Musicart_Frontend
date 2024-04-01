@@ -1,0 +1,69 @@
+.imageContainer {
+  width: 200px;
+  height: 180px;
+  background-color: #d4e5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#image {
+  width: 150px;
+  height: 150px;
+}
+.details {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 10px;
+}
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 120px;
+  margin-top: 3vh;
+  width: 80vw;
+}
+.detailContainer {
+  width: 55vw;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.product {
+  height: 200px;
+  display: flex;
+  gap: 20px;
+}
+.pname {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.detail button {
+  width: 110px;
+  height: 30px;
+  border-radius: 26.12px;
+  background: #2e0052;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffff;
+  cursor: pointer;
+}
+.cartdiv {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0%;
+  right: 2%;
+  box-shadow: 0px 0px 7px 0px #00000040;
+}

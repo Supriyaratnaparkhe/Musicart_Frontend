@@ -1,0 +1,98 @@
+.feedback {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  top: 85%;
+  right: 3%;
+  z-index: 1;
+  border-radius: 100%;
+  box-shadow: 0px 0px 30px 0px #00000040;
+}
+.feedback img {
+  width: 60px;
+  height: 60px;
+  margin-left: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.feedbackform {
+  position: fixed;
+  width: 270px;
+  height: 360px;
+  top: 40%;
+  right: 3%;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 0px 20px 0px #0000005e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30.26px;
+  margin-top:10px;
+}
+.selectbox select {
+  width: 220px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  color: #919191;
+  background: #F3F3F3;
+
+}
+.noerrorbox {
+  border: 1px solid #919191;
+}
+.errorbox {
+  border-color: #ff0000;
+}
+.inputbox textarea {
+  width: 200px;
+  height: 130px;
+  border-radius: 5px;
+  color: #919191;
+  resize: none;
+  outline: none;
+  padding: 10px;
+  background: #F3F3F3;
+
+}
+.error {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  color: #ff0000;
+}
+.submit button {
+  width: 95px;
+  height: 33px;
+  border-radius: 26.12px;
+  opacity: 0px;
+  background: #2e0052;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.3px;
+  color: #ffff;
+  margin-top: 10px;
+}
+.close {
+  position: fixed;
+  top: 40%;
+  right: 4%;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.26px;
+  cursor: pointer;
+}
