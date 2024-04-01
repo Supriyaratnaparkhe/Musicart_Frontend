@@ -1,51 +1,6 @@
-/* .slick-prev,
-.slick-next {
-  position: absolute;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 100%;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transform: translateY(-50%);
-} */
-/* .slick-prev {
-  position: absolute;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 100%;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transform: translateY(-50%);
-  left: 25%;
-  top: 105%;
-} */
-/* .slick-next {
-  position: absolute;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 100%;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transform: translateY(-50%);
-  right: 25%;
-  top: 105%;
-} */
 .slick-prev.slick-disabled,
 .slick-next.slick-disabled {
-  background-color: rgba(0, 0, 0, 0.5); /* Set background color */
-  /* Add other styling properties as needed */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .slick-prev:hover,
 .slick-next:hover {
@@ -54,16 +9,7 @@
 
 .slick-prev,
 .slick-next {
-  
-  
-  
   font-size: 20px;
-  
-  
-  
-  
- 
-
   position: absolute;
   z-index: 1;
   background: rgba(0, 0, 0, 0.5);
@@ -77,11 +23,8 @@
   align-items: center;
   color: white;
   transform: translateY(-50%);
-  /* right: 25%; */
   top: 105%;
 }
-
-
 
 .slick-dots {
   bottom: 10px;
