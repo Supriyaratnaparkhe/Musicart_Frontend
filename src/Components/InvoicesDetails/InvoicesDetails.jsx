@@ -56,7 +56,7 @@ const InvoicesDetails = () => {
     const fetchInvoice = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/auth/invoicedetail/${userId}/${invoiceId}`,
+          `https://musicart-backend-zxey.onrender.com/auth/invoicedetail/${userId}/${invoiceId}`,
           {
             headers: {
               token: localStorage.getItem("token"),
