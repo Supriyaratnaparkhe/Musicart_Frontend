@@ -40,7 +40,7 @@ const Invoices = () => {
     const fetchInvoices = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/auth/getinvoices/${userId}`,
+          `https://musicart-backend-zxey.onrender.com/auth/getinvoices/${userId}`,
           {
             headers: {
               token: localStorage.getItem("token"),
