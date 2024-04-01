@@ -131,10 +131,8 @@ const Feedback = ({ isLoggedIn, userId }) => {
               <div className={styles.error}>
                 {errors.feedbackText ? errors.feedbackText : ""}
               </div>
-              <div>
-                <center className={styles.submit}>
+              <div className={styles.submit}>
                   <button type="submit">{loading}</button>
-                </center>
               </div>
             </form>
             <div className={styles.close} onClick={handleClose}>
