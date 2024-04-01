@@ -42,7 +42,7 @@ const Feedback = ({ isLoggedIn, userId }) => {
     if (isValid) {
       try {
         await axios.put(
-          `http://localhost:3001/auth/${userId}`,
+          `https://musicart-backend-zxey.onrender.com/auth/${userId}`,
           {
             feedbackType: formData.feedbackType,
             feedbackText: formData.feedbackText,
