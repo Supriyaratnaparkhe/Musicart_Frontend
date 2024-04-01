@@ -13,8 +13,6 @@ import Footer from "../../Components/Footer/Footer";
 import Spinner from "../../Components/Spinner/Spinner";
 import MobileProduct from "../../Components/MobileProduct/MobileProduct";
 
-
-
 const ProductDetails = () => {
   const { userId } = useParams();
   const { productId } = useParams();
@@ -68,7 +66,7 @@ const ProductDetails = () => {
     const fetchProductDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/product/getProductDetails/${productId}`
+          `https://musicart-backend-zxey.onrender.com/product/getProductDetails/${productId}`
         );
         const {
           product_name,
@@ -116,7 +114,7 @@ const ProductDetails = () => {
       if (isLoggedIn) {
         try {
           const response = await axios.get(
-            `http://localhost:3001/auth/${userId}/cartItem`,
+            `https://musicart-backend-zxey.onrender.com/auth/${userId}/cartItem`,
             {
               headers: {
                 token: localStorage.getItem("token"),
@@ -151,7 +149,7 @@ const ProductDetails = () => {
     if (isLoggedIn) {
       try {
         await axios.put(
-          `http://localhost:3001/auth/${userId}/${productId}`,
+          `https://musicart-backend-zxey.onrender.com/auth/${userId}/${productId}`,
           {},
           {
             headers: {
@@ -367,204 +365,6 @@ const ProductDetails = () => {
             loading && <Spinner />
           )}
         </div>
-        // <div>
-        //   {!loading ? (
-        //     <div>
-        //       <div className={styles.headbar1}>
-        //         <div className={styles.search1}>
-        //           <input
-        //             type="text"
-        //             name="search"
-        //             // value={filters.search}
-        //             // onChange={handleFilterChange}
-        //             className={styles.searchbar1}
-        //             placeholder="Search by Product Name"
-        //           />
-        //           <img
-        //             src={search}
-        //             alt="search"
-        //             style={{ width: "30px", height: "30px" }}
-        //           />
-        //         </div>
-        //       </div>
-        //       <div className={styles.backbut1} onClick={() => handleBack()}>
-        //         <img src={backArrow} alt="back" style={{ marginTop: "15px" }} />
-        //       </div>
-        //       <div className={styles.container1}>
-        //         <div className={styles.but1}>
-        //           <button
-        //             style={{ backgroundColor: "#FFB800" }}
-        //             onClick={() => handleBuy()}
-        //           >
-        //             Buy Now
-        //           </button>
-        //         </div>
-        //         <div className={styles.imageContainer1}>
-        //           <div className={styles.image3}>
-        //             <img src={image1st} alt="image1" />
-        //           </div>
-        //           {/* <div className={styles.image3}>
-        //               <img src={image2nd} alt="image2" />
-        //             </div> */}
-        //           {/* <div className={styles.image3}>
-        //               <img src={image3rd} alt="image3" />
-        //             </div>
-        //             <div className={styles.image3}>
-        //               <img src={image4th} alt="image4" />
-        //             </div> */}
-        //         </div>
-        //         <div className={styles.detailContainer}>
-        //           <div style={{width:"100%"}}>
-        //             <div className={styles.pname}>{details.product_name}</div>
-        //             <div
-        //               style={{
-        //                 display: "flex",
-        //                 alignItems: "center",
-        //                 marginTop: "2vh",
-        //               }}
-        //             >
-        //               <div style={{ fontSize: "20px" }}>{renderStars()}</div>
-        //               <div className={styles.review}>
-        //                 ( {details.review} customer reviews)
-        //               </div>
-        //             </div>
-        //             <div className={styles.about}>{details.about}</div>
-        //             <div className={styles.price}>Price- ₹{details.price}</div>
-        //             <div className={styles.color}>
-        //               {details.color} | {details.type} headphone
-        //             </div>
-        //             <div className={styles.descr}>
-        //               About this items
-        //               <ul>
-        //                 {details.description.map((item, index) => (
-        //                   <li key={index}>{item.point}</li>
-        //                 ))}
-        //               </ul>
-        //             </div>
-        //             <div className={styles.tag} style={{ marginTop: "-10px" }}>
-        //               <span>Available</span> - {details.available}
-        //             </div>
-        //             <div className={styles.tag}>
-        //               <span>Brand</span> - {details.company}
-        //             </div>
-        //           </div>
-        //           <div style={{width:"100%"}}>
-        //             <div className={styles.but1} style={{width:"100%"}}>
-        //               <button
-        //                 style={{ backgroundColor: "#FFD600" }}
-        //                 onClick={() => handleAddToCart(productId)}
-        //               >
-        //                 Add to Cart
-        //               </button>
-        //             </div>
-        //             <div className={styles.but1} style={{width:"100%"}}>
-        //               <button
-        //                 style={{ backgroundColor: "#FFB800" }}
-        //                 onClick={() => handleBuy()}
-        //               >
-        //                 Buy Now
-        //               </button>
-        //             </div>
-        //           </div>
-        //         </div>
-        //       </div>
-        //       {/* <div className={styles.about}>{details.about}</div>
-        //       <div className={styles.productContainer}>
-        //         <div className={styles.imageContainer}>
-        //           <div className={styles.upper}>
-        //             <div className={styles.image1}>
-        //               <img src={image1st} alt="image1" />
-        //             </div>
-        //           </div>
-        //           <div className={styles.lower}>
-        //             <div className={styles.image2}>
-        //               <img
-        //                 src={image2nd}
-        //                 alt="image2"
-        //                 onClick={() => handleImage(image2nd, 2)}
-        //               />
-        //             </div>
-        //             <div className={styles.image2}>
-        //               <img
-        //                 src={image3rd}
-        //                 alt="image3"
-        //                 onClick={() => handleImage(image3rd, 3)}
-        //               />
-        //             </div>
-        //             <div className={styles.image2}>
-        //               <img
-        //                 src={image4th}
-        //                 alt="image4"
-        //                 onClick={() => handleImage(image4th, 4)}
-        //               />
-        //             </div>
-        //           </div>
-        //         </div>
-        //         <div className={styles.detailContainer}>
-        //           <div>
-        //             <div className={styles.pname}>{details.product_name}</div>
-        //             <div
-        //               style={{
-        //                 display: "flex",
-        //                 alignItems: "center",
-        //                 marginTop: "10px",
-        //               }}
-        //             >
-        //               <div style={{ fontSize: "20px" }}>{renderStars()}</div>
-        //               <div className={styles.review}>
-        //                 ( {details.review} customer reviews)
-        //               </div>
-        //             </div>
-        //             <div className={styles.price}>Price- ₹{details.price}</div>
-        //             <div className={styles.color}>
-        //               {details.color} | {details.type} headphone
-        //             </div>
-        //             <div className={styles.descr}>
-        //               About this items
-        //               <ul>
-        //                 {details.description.map((item, index) => (
-        //                   <li key={index}>{item.point}</li>
-        //                 ))}
-        //               </ul>
-        //             </div>
-        //             <div className={styles.tag} style={{ marginTop: "-10px" }}>
-        //               <span>Available</span> - {details.available}
-        //             </div>
-        //             <div className={styles.tag}>
-        //               <span>Brand</span> - {details.company}
-        //             </div>
-        //           </div>
-        //           <div>
-        //             <div className={styles.but}>
-        //               <button
-        //                 style={{ backgroundColor: "#FFD600" }}
-        //                 onClick={() => handleAddToCart(productId)}
-        //               >
-        //                 Add to Cart
-        //               </button>
-        //             </div>
-        //             <div className={styles.but}>
-        //               <button
-        //                 style={{ backgroundColor: "#FFB800" }}
-        //                 onClick={() => handleBuy()}
-        //               >
-        //                 Buy Now
-        //               </button>
-        //             </div>
-        //           </div>
-        //         </div>
-        //       </div> */}
-        //     </div>
-        //   ) : (
-        //     loading && <Spinner />
-        //   )}
-        //   <MobileFooter
-        //     isLoggedIn={isLoggedIn}
-        //     setIsLoggedIn={setIsLoggedIn}
-        //     cartItemCount={cartItemCount}
-        //   />
-        //   <ToastContainer />
-        // </div>
       )}
     </>
   );
