@@ -127,7 +127,7 @@ const HomePage = () => {
       }
     };
       fetchsearchData();  
-  }, []);
+  }, [searchq]);
 
   const handleGridView = () => {
     setGridType(true);
