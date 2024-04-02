@@ -227,15 +227,31 @@ select:focus {
   }
   .text1 {
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 1em;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 25px;
     width: 60%;
     height: 90%;
     color: #2e0052;
     position: absolute;
     top: 10%;
     left: 8%;
+  }
+  .buynow {
+    position: absolute;
+    width: 20%;
+    height: 18%;
+    top: 70%;
+    left: 8%;
+    border-radius: 10.36px;
+    border:none;
+    background: #2e0052;
+    font-family: Roboto;
+    font-size: 9.32px;
+    font-weight: 400;
+    line-height: 10.92px;
+    text-align: center;
+    color: #fff;
   }
   .person1 img {
     position: absolute;
