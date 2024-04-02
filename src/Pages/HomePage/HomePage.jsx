@@ -383,6 +383,7 @@ const HomePage = () => {
                   <div className={styles.person1}>
                     <img src={person} alt="person" />
                   </div>
+                  <div><button className={styles.buynow}>Buy Now</button></div>
                 </div>
               </div>
 
