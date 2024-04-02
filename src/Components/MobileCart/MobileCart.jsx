@@ -14,6 +14,7 @@ const MobileCart = ({
   setIsLoggedIn,
   cartProducts,
   handleBack,
+  cartItemCount
 }) => {
   const { userId } = useParams();
   const [searchValue, setSearchValue] = useState("");
@@ -150,6 +151,7 @@ const MobileCart = ({
         isLoggedIn={isLoggedIn}
         setIsLoggedIn={setIsLoggedIn}
         state={"cart"}
+        cartItemCount={cartItemCount}
       />
     </>
   );
