@@ -34,12 +34,7 @@ const MobileFooter = ({ isLoggedIn, setIsLoggedIn, state, cartItemCount }) => {
     localStorage.removeItem("token");
     localStorage.removeItem("UserName");
     sessionStorage.removeItem("isValidSession");
-    setIsLoggedIn(false);
-    if (userId) {
-      navigate1(`/${userId}`);
-    } else {
       navigate1("/");
-    }
   };
   const handleCart = (e) => {
     e.preventDefault();
