@@ -19,6 +19,7 @@ const MyCart = () => {
   const navigate = useNavigate();
   const { userId } = useParams();
   const [isMobile, setIsMobile] = useState(false);
+  const [cartItemCount, setCartItemCount] = useState(0); 
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -69,6 +70,8 @@ const MyCart = () => {
     };
 
     calculateTotalMrp();
+    const itemCount = cartProducts.reduce((acc, product) => acc + product.quantity, 0);
+    setCartItemCount(itemCount);
   }, [cartProducts]);
 
   const handleBack = () => {
@@ -107,7 +110,7 @@ const MyCart = () => {
                   <div className={styles.home}>Home / View Cart</div>
                 </div>
                 <div className={styles.right}>
-                  <ViewCart isLoggedIn={true} />
+                  <ViewCart isLoggedIn={true} cartItemCount={cartItemCount} />
                 </div>
               </div>
               <div className={styles.back}>
@@ -250,6 +253,7 @@ const MyCart = () => {
               handlePlaceOrder={handlePlaceOrder}
               isLoggedIn={isLoggedIn}
               setIsLoggedIn={setIsLoggedIn}
+              cartItemCount={cartItemCount}
             />
           ) : (
             loading && <Spinner />
