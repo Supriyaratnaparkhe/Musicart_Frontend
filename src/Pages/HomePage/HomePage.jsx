@@ -31,7 +31,7 @@ const HomePage = () => {
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
   const location = useLocation();
-  var { searchq } = location.state || {};
+  const { searchq } = location.state || {};
   
   const [filters, setFilters] = useState({
     type: "",
@@ -48,6 +48,7 @@ const HomePage = () => {
   const [list, setlist] = useState(listhide);
   const [cartItemCount, setCartItemCount] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [searchQuery, setSearchQuery] = useState(searchq);
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -64,7 +65,6 @@ const HomePage = () => {
     };
   }, []);
 
-
   useEffect(() => {
     try {
       setIsLoggedIn(isUserLoggedIn(userId));
@@ -74,13 +74,13 @@ const HomePage = () => {
   }, [userId]);
   
   useEffect(() => {
-    if (location.state && location.state.searchq) {
+    if (location.state && searchQuery) {
       setFilters((prevFilters) => ({
         ...prevFilters,
-        search: location.state.searchq,
+        search: searchQuery,
       }));
     }
-  }, [location.state]);
+  }, [location.state,searchQuery]);
 
   const handleFilterChange = (event) => {
     const { name, value } = event.target;
@@ -88,7 +88,7 @@ const HomePage = () => {
     setFilters({ ...filters, [name]: value });
     
   };
-
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -97,7 +97,7 @@ const HomePage = () => {
           "https://musicart-backend-zxey.onrender.com/product/getAllProducts",
           { params: filters }
         );
-        console.log("API Response:", response.data);
+        console.log("API fetchdata Response:", response.data);
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
@@ -105,20 +105,21 @@ const HomePage = () => {
         setLoading(false);
       } 
     };
+  
+    console.log("before fetching", searchQuery);
+    if (!searchQuery) {
       fetchData();
-    
-  }, [filters]);
+    }  
+  }, [filters, searchQuery]);
 
   useEffect(() => {
     const fetchsearchData = async () => {
       try {
         const response = await axios.get(
           "https://musicart-backend-zxey.onrender.com/product/getAllProducts",
-          { params: {
-            search: searchq,
-          }, }
+          { params: { search: searchQuery } }
         );
-        console.log("API Response:", response.data);
+        console.log("API fetch search Response:", response.data);
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
@@ -126,9 +127,14 @@ const HomePage = () => {
         setLoading(false);
       }
     };
-      fetchsearchData();  
-  }, [searchq]);
-
+  
+    if (searchQuery) {
+        fetchsearchData();
+        setSearchQuery(""); 
+        console.log("after deleting searchq ", searchQuery);
+    }  
+  }, [searchQuery]);
+  
   const handleGridView = () => {
     setGridType(true);
     setListType(false);
