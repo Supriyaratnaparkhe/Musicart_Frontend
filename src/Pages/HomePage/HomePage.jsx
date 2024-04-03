@@ -84,7 +84,6 @@ const HomePage = () => {
 
   const handleFilterChange = (event) => {
     const { name, value } = event.target;
-    console.log("Search filter value:", value);
     setFilters({ ...filters, [name]: value });
     
   };
@@ -92,12 +91,10 @@ const HomePage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log("Fetching data with filters:", filters);
         const response = await axios.get(
           "https://musicart-backend-zxey.onrender.com/product/getAllProducts",
           { params: filters }
         );
-        console.log("API fetchdata Response:", response.data);
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
@@ -119,7 +116,6 @@ const HomePage = () => {
           "https://musicart-backend-zxey.onrender.com/product/getAllProducts",
           { params: { search: searchQuery } }
         );
-        console.log("API fetch search Response:", response.data);
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
@@ -131,7 +127,6 @@ const HomePage = () => {
     if (searchQuery) {
         fetchsearchData();
         setSearchQuery(""); 
-        console.log("after deleting searchq ", searchQuery);
     }  
   }, [searchQuery]);
   
