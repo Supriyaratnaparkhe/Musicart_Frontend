@@ -17,14 +17,14 @@ const MobileCart = ({
   cartItemCount
 }) => {
   const { userId } = useParams();
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue1, setSearchValue1] = useState("");
   const navigate = useNavigate();
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       if (isLoggedIn) {
-        navigate(`/${userId}`, { state: { searchq: searchValue } });
+        navigate(`/${userId}`, { state: { searchq: searchValue1 } });
       } else {
-        navigate("/", { state: { searchq: searchValue } });
+        navigate("/", { state: { searchq: searchValue1 } });
       }
     }
   };
@@ -35,8 +35,8 @@ const MobileCart = ({
           <input
             type="text"
             name="search"
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
+            value={searchValue1}
+            onChange={(e) => setSearchValue1(e.target.value)}
             onKeyPress={handleKeyPress}
             className={styles.searchbar1}
             placeholder="Search by Product Name"
