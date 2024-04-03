@@ -189,6 +189,7 @@ select:focus {
     font-size: 20px;
     font-weight: 400;
     line-height: 39.31px;  
+    border:none;
   }
   .search1 {
     width: 90%;
