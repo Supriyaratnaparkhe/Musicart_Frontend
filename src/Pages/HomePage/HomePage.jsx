@@ -103,7 +103,6 @@ const HomePage = () => {
       } 
     };
   
-    console.log("before fetching", searchQuery);
     if (!searchQuery) {
       fetchData();
     }  
