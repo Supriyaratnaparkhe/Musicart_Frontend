@@ -19,8 +19,8 @@ const MobileCart = ({
   const { userId } = useParams();
   const [searchValue1, setSearchValue1] = useState("");
   const navigate = useNavigate();
-  const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
+  const handleKeyPress1 = (e) => {
+    if (e.key === "Enter") {
       if (isLoggedIn) {
         navigate(`/${userId}`, { state: { searchq: searchValue1 } });
       } else {
@@ -37,7 +37,7 @@ const MobileCart = ({
             name="search"
             value={searchValue1}
             onChange={(e) => setSearchValue1(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onKeyPress={handleKeyPress1}
             className={styles.searchbar1}
             placeholder="Search by Product Name"
           />
